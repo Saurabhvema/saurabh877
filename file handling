@@ -1,0 +1,32 @@
+Q.1# read a file
+txt=open('test.txt')
+print(txt.read())
+
+
+Q.2 #Read n number of lines in txt file .py
+a=int(input("enter the nth line:"))
+file1=open('file.txt','r')
+for i in range(0,a):
+    print(file1.readline())
+    
+Q.3# append text and display it in file.py
+def file_read(fname):
+        from itertools import islice
+        with open(fname, "w") as myfile:
+                myfile.write("Python Exercises\n")
+                myfile.write("Java Exercises")
+        txt = open(fname)
+        print(txt.read())
+file_read('abc.txt')
+
+Q.4# read a file with for loop.py
+file = open('geek.txt', 'r')
+for each in file:
+	print (each)
+  
+Q.5# Read a file with split.py
+with open("file.text", "r") as file:
+	data = file.readlines()
+	for line in data:
+		word = line.split()
+		print (word)
