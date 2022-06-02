@@ -1,0 +1,31 @@
+Q1-making-and-trivars-throw-array.py
+import numpy as np
+arr=np.array([1,2,3])
+for i in arr:
+    print(i)
+
+Q2-input-and-sum-all-the-elements-in-array.py
+import numpy as np
+arr=np.array([eval(input())])
+j=0
+for i in arr:
+    j+=i
+print(j)
+Q4-input-and-multiply-of-element-in-2-multi-dimentional-matrix.py
+import numpy as np
+r,c=eval(input("Enter the row,coloum of matrix:"))
+g=np.empty([r,c])
+for i in range(0,r):
+    for j in range(0,c):
+        g[i][j]=int(input(f"enter {i},{j} element of matrix1:"))
+g1=np.empty([r,c])
+for i in range(0,r):
+    for j in range(0,c):
+        g1[i][j]=int(input(f"enter {i},{j} element of matrix2:"))
+g3=np.empty([r,c])
+for i in range(0,r):
+    for j in range(0,c):
+        g3[i][j]=g[i][j]*g1[i][j]
+print(g3)
+
+
