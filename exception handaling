@@ -1,0 +1,42 @@
+Q.1#handeling-zerodivision error.py
+a=1
+c=0
+try:
+    print(a/c)
+except ZeroDivisionError:
+    print('cannot divide')
+    
+Q.2# Handeling any kind of error.py
+a=1
+c=0
+try:
+    print(a/c)
+except Exception:
+    print('cannot divide')
+    
+    
+Q.3#Handeling multiple exceptions.py
+a=1
+c=0
+try:
+    print(a/c)
+except (EOFError,ZeroDivisionError):
+    print('cannot divide')
+    
+Q.4# Raise exception name.py
+y=1
+while y:
+    y+=1
+    if y>9:
+        raise ArithemeticError('greater then 9')
+        
+Q.5#Try excepr esle.py
+try:
+   fh = open("testfile", "w")
+   fh.write("This is my test file for exception handling!!")
+except IOError:
+   print ("Error: can\'t find file or read data")
+else:
+   print("Written content in the file successfully")
+   fh.close()
+        
