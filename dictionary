@@ -1,0 +1,134 @@
+Q.1# program to merge two dictionary
+d={}
+a=int(input("enter d1 no of elements:"))
+while(a):
+    c,b=eval(input("enter key,dictioinary"))
+    d[c]=b
+    c,b=0,0
+    a-=1
+d1={}
+a=int(inpt("enter no of elements of d2:"))
+while(a):
+    c,b=eval(input("enter key,dictioinary"))
+    d1[c]=b
+    c,b=0,0
+    a-=1
+[6:09 PM, 6/2/2022] Saurabh 2: if len(d1)>len(d):
+    for i in d1:
+        d[i]=d1[i]
+    print(d)
+else:
+      for i in d:
+        d1[i]=d[i]
+      print(d1)
+Q.2#a=int(input("enter the length of dict:"))
+d={}
+while(a):
+    b,c=eval(input("enter key,value:"))
+    d[b]=c
+    a-=1
+print(d)
+a=int(input("Enter the key you want to remove:"))
+d.pop(a)
+print(f"Dict. after key removal:{d}")
+
+
+Q.3#two list into dictionary
+l=input("enter the spsce saperated list1:")
+l2=input("enter the spsce saperated list2:")
+l2=l2.split()
+l=l.split()
+e=0
+d={}
+if len(l2)>len(l):
+    for i in l:
+        d[i]=l[e]
+        e+=1
+    for i in range(e,len(l2)):
+        d[l2[i]]=0
+else:
+    for i in l2:
+        d[i]=l2[e]
+        e+=1
+    for i in range(e,len(l)):
+        d[l[i]]=0
+print(d)
+
+
+Q.4d={}
+a=int(input("enter d1 no of elements:"))
+while(a):
+    c,b=eval(input("enter key,dictioinary"))
+    d[c]=b
+    c,b=0,0
+    a-=1
+max=0
+for i in d:
+    if d[i]>max:
+        max=d[i]
+min=max
+for i in d:    
+    if d[i]<min:
+        min=d[i]
+print(f"max={max},min={min}")
+
+
+Q.6# remove duplicacy.py
+d={}
+a=int(input("enter d1 no of elements:"))
+while(a):
+    c,b=eval(input("enter key,dictioinary"))
+    d[c]=b
+    c,b=0,0
+    a-=1
+max=0
+for i in d:
+    if d[i]>max:
+        max=d[i]
+min=max
+for i in d:    
+    if d[i]<min:
+        min=d[i]
+print(f"max={max},min={min}")
+
+
+Q.7 is dictionary is empty.py
+d={}
+a=int(input("enter d1 no of elements:"))
+while(a):
+    c,b=eval(input("enter key,dictioinary"))
+    d[c]=b
+    c,b=0,0
+    a-=1
+if d == {}:
+    print("YES")
+else:
+    print("NO")
+    
+Q.8 #user defined dict.py
+n=int(input("enter no of terms"))
+d={}
+for i in range(n):
+    a=input("enter key")
+    b=input("enter value")
+    d.update({a:b})
+print(d)
+
+
+Q.9# squares in dic.py
+squares = {}
+for x in range(6):
+    squares[x] = x*x
+print(squares)
+
+
+Q10## Dictionary Comprehension with if conditional
+odd_squares = {x: x*x for x in range(11) if x % 2 == 1}
+print(odd_squares)
+    
+
+
+
+
+
+
