@@ -1,0 +1,106 @@
+Q.1 # Return student present and absent
+def detail(roll):
+    x = [23,43,22,56,77,78,90]
+    if roll in x:
+        print(f"Roll number {roll} is present")
+    else:
+        print(f"Roll number {roll} is absent")
+roll = int(input("Enter roll no. ")) # 24
+detail(roll)
+
+Q.2# Factorial.py
+def factorial(num):
+    fact = 1
+    while(num!=0):
+        fact *= num
+        num = num - 1
+    print("Factorial is",fact)
+num = int(input("Enter number "))
+factorial(num)
+
+Q.3# lower to upper.py
+def response(text):
+    z = text.upper()
+    print(z)
+text = input("Enter String: ") 
+response(text)
+
+Q.4# Count vowels-consonent.py
+def count(val):
+    vov = 0
+    con = 0
+    for i in range(len(val)):
+        if val[i] in ['a','e','i','o','u']:
+            vov = vov+1
+        else:
+            con = con + 1
+    print("Count of vowels is ",vov)
+    print("Count of consonant is ",con)
+x = input("Enter Value: ") # pythonlobby
+count(x)
+
+
+Q.5#printing .py
+def fun():
+    print("Welcome to GLA")
+fun()
+
+Q.6# calculator with function.py
+def cal(x,y):
+    a=x+y
+    b=x-y
+    c=x*y
+    d=x/y
+    t=a,b,c,d
+    return t
+x=int(input())
+y=int(input())
+print(cal(x,y))
+
+
+Q.7 # function to print all armstrong no between a and b .py
+def cal(x,y):
+    a=x+y
+    b=x-y
+    c=x*y
+    d=x/y
+    t=a,b,c,d
+    return t
+x=int(input())
+y=int(input())
+print(cal(x,y))
+
+Q.8# program  by function that return true if n is even and false when n is odd.
+def even(n):
+    if n%2==0:
+        return "True"
+    else:
+        return "False"
+n=int(input())
+a=even(n)
+
+Q.9# fabonaci with function.py
+def fab(n):
+    a=0
+    b=1
+    if n==1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+         c=a+b
+         a=b
+         b=c
+         print(c)
+n=int(input())
+fab(n)
+
+Q.10#Sum of digits by functions.py
+def sum(n):
+    s=0
+    for digit in n:
+        s+=int(digit)
+    return(s)
+n=input()
+print(sum(n))
